@@ -1,0 +1,6 @@
+{
+	"appId": "vn.toan.app",
+	"appName": "AppToan",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

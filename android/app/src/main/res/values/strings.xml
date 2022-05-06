@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AppToan</string>
+    <string name="title_activity_main">AppToan</string>
+    <string name="package_name">vn.toan.app</string>
+    <string name="custom_url_scheme">vn.toan.app</string>
+</resources>
