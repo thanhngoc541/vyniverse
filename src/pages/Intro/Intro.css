@@ -4,7 +4,7 @@
     text-transform: none !important;
 }
 
-.main-row 
+.main-row
 {
     height: 100% !important;
     width: 100% !important;
@@ -18,17 +18,11 @@
 }
 
 
-.bottom-holder
+
+
+
+.sm-detail
 {
-    background: white;
-    bottom: 0;
-    z-index: 20;
-}
-
-
-.slide-content .sm-detail
-{
-
     color: #77869E;
     font-family: 'Medium';
     font-size: 14px;
@@ -39,7 +33,6 @@
 
 h4
 {
-    color: #042C5C;
     font-size: 16px;
 }
 

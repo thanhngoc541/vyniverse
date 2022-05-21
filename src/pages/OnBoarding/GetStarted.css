@@ -1,0 +1,6 @@
+
+.select-adventure-container{
+  width: 300px;
+  margin-top: calc(40vh - 56px);
+  transform: translateY(-50%);
+}

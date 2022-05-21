@@ -18,7 +18,7 @@ const Intro: React.FC = () => {
             <IonHeader className="ion-no-border">
                 <IonToolbar>
                     <IonButtons slot="end">
-                        <IonButton className="skip-button">SKIP</IonButton>
+                        <IonButton routerLink="/choose-language" className="skip-button">SKIP</IonButton>
                     </IonButtons>
                 </IonToolbar>
             </IonHeader>
@@ -63,8 +63,8 @@ const Intro: React.FC = () => {
                     </SwiperSlide>
                 </Swiper>
                 <div className="btns-holder ion-text-center">
-                    <IonButton routerLink="/login" className="btn">Login</IonButton>
-                    <IonButton routerLink="signup" id="signup" className="btn">
+                    <IonButton routerLink="/choose-language" className="btn">Login</IonButton>
+                    <IonButton routerLink="/choose-language" id="signup" className="btn">
                         Signup
                     </IonButton>
                 </div>

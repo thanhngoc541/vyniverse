@@ -1,10 +1,11 @@
 :root {
     --animate-delay: 0.3s;
     /** primary **/
-    --ion-font-family: 'SF';
+    --ion-font-family: 'Source Sans Pro';
     --ion-color-primary: #0047CC;
     --ion-color-primary-rgb: 0, 71, 204;
-    --ion-color-primary-contrast: #ffffff;
+    --ion-color-primary-contrast: #
+    ;
     --ion-color-primary-contrast-rgb: 255, 255, 255;
     --ion-color-primary-shade: #003eb4;
     --ion-color-primary-tint: #1a59d1;
@@ -74,51 +75,138 @@
     --ion-color-light-tint: #f5f6f9;
 }
 
+@media (prefers-color-scheme: dark) {
+    :root {
+      /* Dark mode variables go here */
+        --ion-background-color: #080A0C;
+        --ion-background-color-rgb: 8,10,12;
+
+        --ion-text-color: #FFFFFF;
+        --ion-text-color-rgb: 255,255,255;
+
+        --ion-color-step-50: #141618;
+        --ion-color-step-100: #212324;
+        --ion-color-step-150: #2d2f30;
+        --ion-color-step-200: #393b3d;
+        --ion-color-step-250: #464749;
+        --ion-color-step-300: #525455;
+        --ion-color-step-350: #5e6061;
+        --ion-color-step-400: #6b6c6d;
+        --ion-color-step-450: #777879;
+        --ion-color-step-500: #848586;
+        --ion-color-step-550: #909192;
+        --ion-color-step-600: #9c9d9e;
+        --ion-color-step-650: #a9a9aa;
+        --ion-color-step-700: #b5b6b6;
+        --ion-color-step-750: #c1c2c2;
+        --ion-color-step-800: #cecece;
+        --ion-color-step-850: #dadadb;
+        --ion-color-step-900: #e6e7e7;
+        --ion-color-step-950: #f3f3f3;
+
+        --ion-color-primary: #3D8DFF;
+        --ion-color-primary-rgb: 61,141,255;
+        --ion-color-primary-contrast: #FFFFFF;
+        --ion-color-primary-contrast-rgb: 0,0,0;
+        --ion-color-primary-shade: #367ce0;
+        --ion-color-primary-tint: #5098ff;
+
+        --ion-color-secondary: #B1DBFF;
+        --ion-color-secondary-rgb: 177,219,255;
+        --ion-color-secondary-contrast: #000000;
+        --ion-color-secondary-contrast-rgb: 0,0,0;
+        --ion-color-secondary-shade: #9cc1e0;
+        --ion-color-secondary-tint: #b9dfff;
+
+        --ion-color-tertiary: #202832;
+        --ion-color-tertiary-rgb: 32,40,50;
+        --ion-color-tertiary-contrast: #ffffff;
+        --ion-color-tertiary-contrast-rgb: 255,255,255;
+        --ion-color-tertiary-shade: #1c232c;
+        --ion-color-tertiary-tint: #363e47;
+
+        --ion-color-success: #2dd36f;
+        --ion-color-success-rgb: 45,211,111;
+        --ion-color-success-contrast: #000000;
+        --ion-color-success-contrast-rgb: 0,0,0;
+        --ion-color-success-shade: #28ba62;
+        --ion-color-success-tint: #42d77d;
+
+        --ion-color-warning: #ffc409;
+        --ion-color-warning-rgb: 255,196,9;
+        --ion-color-warning-contrast: #000000;
+        --ion-color-warning-contrast-rgb: 0,0,0;
+        --ion-color-warning-shade: #e0ac08;
+        --ion-color-warning-tint: #ffca22;
+
+        --ion-color-danger: #eb445a;
+        --ion-color-danger-rgb: 235,68,90;
+        --ion-color-danger-contrast: #ffffff;
+        --ion-color-danger-contrast-rgb: 255,255,255;
+        --ion-color-danger-shade: #cf3c4f;
+        --ion-color-danger-tint: #ed576b;
+
+        --ion-color-medium: #92949c;
+        --ion-color-medium-rgb: 146,148,156;
+        --ion-color-medium-contrast: #000000;
+        --ion-color-medium-contrast-rgb: 0,0,0;
+        --ion-color-medium-shade: #808289;
+        --ion-color-medium-tint: #9d9fa6;
+
+        --ion-color-light: #f4f5f8;
+        --ion-color-light-rgb: 244,245,248;
+        --ion-color-light-contrast: #000000;
+        --ion-color-light-contrast-rgb: 0,0,0;
+        --ion-color-light-shade: #d7d8da;
+        --ion-color-light-tint: #f5f6f9;
+    }
+  }
+
 
 @font-face {
-    font-family: 'SF';
+    font-family: 'Source Sans Pro';
     font-style: normal;
-    font-weight: 200 300;
-    src: url('../assets/fonts/SF/SFUIText-Light.ttf');
+    font-weight: 200 400;
+    src: url('../assets/fonts/SSP/SourceSansPro-Light.ttf');
 }
 
 @font-face {
-    font-family: 'SF';
+    font-family: 'Source Sans Pro';
     font-style: normal;
     font-weight: 400 600;
-    src: url('../assets/fonts/SF/SFUIText-Regular.ttf');
+    src: url('../assets/fonts/SSP/SourceSansPro-Regular.ttf');
 }
 
 @font-face {
-    font-family: 'SF';
+    font-family: 'Source Sans Pro';
     font-style: normal;
-    font-weight: 700 900;
-    src: url('../assets/fonts/SF/SFUIText-Bold.ttf');
+    font-weight: 600 900;
+    src: url('../assets/fonts/SSP/SourceSansPro-Bold.ttf');
 }
 
 @font-face {
-    font-family: 'SF';
+    font-family: 'Source Sans Pro';
     font-style: italic;
-    font-weight: 200 300;
-    src: url('../assets/fonts/SF/SFUIText-LightItalic.ttf');
+    font-weight: 200 400;
+    src: url('../assets/fonts/SSP/SourceSansPro-LightItalic.ttf');
 }
 
 @font-face {
-    font-family: 'SF';
+    font-family: 'Source Sans Pro';
     font-style: italic;
     font-weight: 400 600;
-    src: url('../assets/fonts/SF/SFUIText-RegularItalic.ttf');
+    src: url('../assets/fonts/SSP/SourceSansPro-Italic.ttf');
 }
 
 @font-face {
-    font-family: 'SF';
+    font-family: 'Source Sans Pro';
     font-style: italic;
-    font-weight: 700 900;
-    src: url('../assets/fonts/SF/SFUIText-BoldItalic.ttf');
+    font-weight: 600 900;
+    src: url('../assets/fonts/SSP/SourceSansPro-BoldItalic.ttf');
 }
 
 * {
-    font-family: 'SF', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 .flex {
