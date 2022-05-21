@@ -1,6 +1,6 @@
-import {IonButton, IonButtons, IonContent, IonHeader, IonPage, IonToolbar} from "@ionic/react";
-import {Swiper, SwiperSlide} from 'swiper/react';
-import {Autoplay, Pagination} from "swiper";
+import { IonButton, IonButtons, IonContent, IonHeader, IonPage, IonToolbar } from "@ionic/react";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from "swiper";
 
 import "./Intro.css";
 
@@ -24,7 +24,7 @@ const Intro: React.FC = () => {
             </IonHeader>
             <IonContent className="ion-padding intro" fullscreen>
                 <div className="img-holder ion-text-center animate__animated animate__bounce">
-                    <img src="assets/imgs/phone.svg"/>
+                    <img src="assets/imgs/phone.svg" />
                 </div>
                 <Swiper
                     modules={[Autoplay, Pagination]}

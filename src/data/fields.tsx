@@ -12,7 +12,7 @@ export const useSignupFields = () => {
                 props: {
 
                     type: "text",
-                    placeholder: "Van"
+                    placeholder: "Ngoc"
                 },
                 state: useFormInput("")
             }
@@ -88,7 +88,7 @@ export const useLoginFields = () => {
 
                 props: {
                     type: "email",
-                    placeholder: "joe@bloggs.com"
+                    placeholder: "Abcd@gmail.com"
                 },
                 state: useFormInput("")
             }
@@ -102,6 +102,25 @@ export const useLoginFields = () => {
                 props: {
                     type: "password",
                     placeholder: "*******"
+                },
+                state: useFormInput("")
+            }
+        }
+    ];
+}
+export const useCreateProfileFields = () => {
+
+    return [
+
+        {
+            id: "username",
+            label: "UserName",
+            required: true,
+            input: {
+
+                props: {
+                    type: "text",
+                    placeholder: "Thanh Ngoc"
                 },
                 state: useFormInput("")
             }

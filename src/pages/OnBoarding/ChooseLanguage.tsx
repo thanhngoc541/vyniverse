@@ -2,8 +2,6 @@ import { IonAvatar, IonButton, IonButtons, IonCol, IonContent, IonGrid, IonHeade
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from "swiper";
 
-import "./ChooseLanguage.css";
-
 import "@ionic/react/css/ionic-swiper.css";
 
 import 'swiper/css';

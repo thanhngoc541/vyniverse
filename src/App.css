@@ -43,7 +43,19 @@
 .text-blue{
   color: blue;
 }
+.text-primary{
+  color:var(--text-color-primary)
+}
 .sm-icon{
     height: 25px;
     width: 25px;
+}
+.font-bold{
+  font-weight: 700;
+}
+.font-semi-bold{
+  font-weight: 600;
+}
+.font-regular{
+  font-weight: 400;
 }

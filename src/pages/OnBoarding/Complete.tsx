@@ -2,7 +2,6 @@ import { IonAvatar, IonBackButton, IonButton, IonButtons, IonCol, IonContent, Io
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from "swiper";
 import { useState, useEffect } from "react";
-import "./Complete.css";
 
 import "@ionic/react/css/ionic-swiper.css";
 import 'swiper/css';
@@ -34,7 +33,7 @@ const Complete: React.FC = () => {
                 <IonGrid className="ion-align-self-center">
                     <IonRow>
                         <IonCol>
-                            <IonButton routerLink="/" shape="round" expand="block">Start Now</IonButton>
+                            <IonButton routerLink="/login" shape="round" expand="block">Start Now</IonButton>
                         </IonCol>
                     </IonRow>
                 </IonGrid>

@@ -18,14 +18,20 @@ import React from "react";
 import ChooseLanguage from "./pages/OnBoarding/ChooseLanguage";
 import ScanQRCode from "./pages/OnBoarding/ScanQRCode";
 import GetStarted from "./pages/OnBoarding/GetStarted";
-import SignUpPage from "./pages/OnBoarding/SignUpPage";
+import SignUpPage from "./pages/OnBoarding/SignUp";
 import ApplicationScan from "./pages/OnBoarding/ApplicationScan";
 import Verification from "./pages/OnBoarding/Verifivation";
 import './App.css';
+import './pages/OnBoarding/OnBoarding.css';
 import ScanIDFront from "./pages/OnBoarding/ScanIDFront";
 import ScanIDBack from "./pages/OnBoarding/ScanIDBack";
 import TakeSelfie from "./pages/OnBoarding/TakeSelfie";
 import Complete from "./pages/OnBoarding/Complete";
+import SignUp from "./pages/OnBoarding/SignUp";
+import Login from "./pages/AccountSetup/Login";
+import CreateProfile from './pages/AccountSetup/CreateProfile';
+import JoinDiscord from "./pages/AccountSetup/JoinDiscord";
+import AccountCompletion from "./pages/AccountSetup/AccountCompletion";
 
 setupIonicReact({
     mode: "md",
@@ -42,15 +48,17 @@ const App: React.FC = () => {
                     <Route path="/choose-language" render={() => <ChooseLanguage />} />
                     <Route path="/scan-qr" render={() => <ScanQRCode />} />
                     <Route path="/get-started" render={() => <GetStarted />} />
-                    <Route path="/sign-up" render={() => < SignUpPage />} />
+                    <Route path="/sign-up" render={() => < SignUp />} />
                     <Route path="/sign-up-scan" render={() => <ApplicationScan />} />
                     <Route path="/verification" render={() => <Verification />} />
                     <Route path="/scan-id-front" render={() => <ScanIDFront />} />
                     <Route path="/scan-id-back" render={() => <ScanIDBack />} />
                     <Route path="/take-selfie" render={() => <TakeSelfie />} />
                     <Route path="/complete" render={() => <Complete />} />
-
-
+                    <Route path="/login" render={() => <Login />} />
+                    <Route path="/create-profile" render={() => <CreateProfile />} />
+                    <Route path="/join-discord" render={() => <JoinDiscord />} />
+                    <Route path="/account-completion" render={() => <AccountCompletion />} />
                 </IonRouterOutlet>
             </IonReactRouter>
         </IonApp>

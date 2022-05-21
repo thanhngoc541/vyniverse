@@ -7,10 +7,9 @@ import CustomField from "../../components/CustomField";
 import { Wave } from "../../components/Wave";
 import { useSignupFields } from "../../data/fields";
 import { validateForm } from "../../data/utils";
-import "./SignUpPage.css";
 
 
-const SignUpPage: React.FC = () => {
+const SignUp: React.FC = () => {
     const params = useParams();
     const fields = useSignupFields();
     const [errors, setErrors] = useState<any[]>([]);
@@ -46,7 +45,7 @@ const SignUpPage: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-                <IonGrid className="ion-padding">
+                <IonGrid className="ion-padding-horizontal ion-no-padding">
                     {fields.map((field) => {
                         return (
                             <IonRow >
@@ -92,4 +91,4 @@ const SignUpPage: React.FC = () => {
         </IonPage >);
 };
 
-export default SignUpPage;
+export default SignUp;
