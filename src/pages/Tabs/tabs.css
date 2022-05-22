@@ -1,0 +1,49 @@
+.right-bottom-icon{
+    position: absolute;
+    bottom: 0px;
+    right: -10px;
+    height: 39px;
+    width: 39px;
+}
+.progress-bar-container{
+    width: 165px;
+    margin: auto;
+}
+.progress-bar{
+    height: 7px;
+    width: 165px;
+}
+.list-container ion-item{
+--ion-background-color: var(--ion-color-tertiary) !important;
+border-radius: 8px;
+margin-bottom: 8px;
+}
+.game-item p, .game-item h3{
+    margin: 0;
+    white-space: normal !important;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.game-item p {
+    font-size: 12px;
+}
+.game-item h3{
+    font-size: 16px;
+    font-weight: 600;
+}
+.game-item h3 span{
+    color: var(--ion-color-fourth);
+}
+.game-item ion-avatar{
+    height: 50px;
+    width: 50px;
+}
+.game-item ion-button{
+    margin: 0;
+}
+.swiper-label ion-col{
+    text-align: center;
+}
+.swiper-label ion-label:not(.ion-color-primary){
+    color: #ABABB0;
+}

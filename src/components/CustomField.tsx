@@ -1,6 +1,5 @@
 import { IonInput, IonLabel } from '@ionic/react';
 import { IonItem } from '@ionic/react';
-import "./CustomField.css";
 
 const CustomField = ({ field, errors }) => {
     const error = errors && errors.filter((e) => e.id === field.id)[0];

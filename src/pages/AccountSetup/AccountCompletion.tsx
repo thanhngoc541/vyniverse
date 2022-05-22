@@ -42,7 +42,7 @@ const AccountCompletion: React.FC = () => {
                                     <img style={{
                                         marginTop: -30,
                                         marginLeft: 20
-                                    }} className="vertical-middle" src="assets/icon/checked-icon.png" />
+                                    }} className="vertical-middle" src="assets/icons/checked-icon.png" />
                                 </div>
                             </IonCol>
                         </IonRow>

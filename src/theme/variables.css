@@ -26,6 +26,13 @@
     --ion-color-tertiary-shade: #4854e0;
     --ion-color-tertiary-tint: #6370ff;
 
+    --ion-color-fourth: #FFE243;
+	--ion-color-fourth-rgb: 255,226,67;
+	--ion-color-fourth-contrast: #000000;
+	--ion-color-fourth-contrast-rgb: 0,0,0;
+	--ion-color-fourth-shade: #e0c73b;
+	--ion-color-fourth-tint: #ffe556;
+
     /** success **/
     --ion-color-success: #2dd36f;
     --ion-color-success-rgb: 45, 211, 111;
@@ -126,6 +133,13 @@
         --ion-color-tertiary-shade: #1c232c;
         --ion-color-tertiary-tint: #363e47;
 
+        --ion-color-fourth: #FFE243;
+        --ion-color-fourth-rgb: 255,226,67;
+        --ion-color-fourth-contrast: #000000;
+        --ion-color-fourth-contrast-rgb: 0,0,0;
+        --ion-color-fourth-shade: #e0c73b;
+        --ion-color-fourth-tint: #ffe556;
+
         --ion-color-success: #2dd36f;
         --ion-color-success-rgb: 45,211,111;
         --ion-color-success-contrast: #000000;
@@ -162,7 +176,14 @@
         --ion-color-light-tint: #f5f6f9;
     }
   }
-
+  .ion-color-fourth {
+	--ion-color-base: var(--ion-color-fourth);
+	--ion-color-base-rgb: var(--ion-color-fourth-rgb);
+	--ion-color-contrast: var(--ion-color-fourth-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-fourth-contrast-rgb);
+	--ion-color-shade: var(--ion-color-fourth-shade);
+	--ion-color-tint: var(--ion-color-fourth-tint);
+}
 
 @font-face {
     font-family: 'Source Sans Pro';
@@ -208,6 +229,7 @@
 
 * {
     font-family: 'Source Sans Pro', sans-serif;
+    text-transform: none;
 }
 
 

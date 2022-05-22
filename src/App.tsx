@@ -12,7 +12,6 @@ import "@ionic/react/css/text-transformation.css";
 import "@ionic/react/css/flex-utils.css";
 import "@ionic/react/css/display.css";
 import "./theme/variables.css";
-import Intro from "./pages/Intro/Intro";
 import MainTabs from "./pages/Tabs/MainTabs";
 import React from "react";
 import ChooseLanguage from "./pages/OnBoarding/ChooseLanguage";
@@ -23,6 +22,7 @@ import ApplicationScan from "./pages/OnBoarding/ApplicationScan";
 import Verification from "./pages/OnBoarding/Verifivation";
 import './App.css';
 import './pages/OnBoarding/OnBoarding.css';
+import './pages/Tabs/tabs.css'
 import ScanIDFront from "./pages/OnBoarding/ScanIDFront";
 import ScanIDBack from "./pages/OnBoarding/ScanIDBack";
 import TakeSelfie from "./pages/OnBoarding/TakeSelfie";
@@ -32,6 +32,7 @@ import Login from "./pages/AccountSetup/Login";
 import CreateProfile from './pages/AccountSetup/CreateProfile';
 import JoinDiscord from "./pages/AccountSetup/JoinDiscord";
 import AccountCompletion from "./pages/AccountSetup/AccountCompletion";
+import Intro from "./pages/Intro/Intro";
 
 setupIonicReact({
     mode: "md",
@@ -47,6 +48,7 @@ const App: React.FC = () => {
                         <Redirect to="/tabs" />
                     </Route>
                     <Route path="/tabs" render={() => <MainTabs />} />
+                    <Route path="/intro" render={() => <Intro />} />
                     <Route path="/choose-language" render={() => <ChooseLanguage />} />
                     <Route path="/scan-qr" render={() => <ScanQRCode />} />
                     <Route path="/get-started" render={() => <GetStarted />} />
