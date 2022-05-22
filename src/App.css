@@ -59,3 +59,44 @@
 .font-regular{
   font-weight: 400;
 }
+.flex {
+  display: flex;
+}
+
+.flexd {
+  flex-direction: column;
+}
+
+
+.al-start {
+  align-items: flex-start;
+}
+
+.al-center {
+  align-items: center;
+}
+
+.al-end {
+  align-items: flex-end;
+}
+
+.jc-start {
+  justify-content: flex-start;
+}
+
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.jc-between {
+  justify-content: space-between;
+}
+
+.jc-around {
+  justify-content: space-around;
+}

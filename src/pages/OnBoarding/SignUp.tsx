@@ -57,7 +57,7 @@ const SignUp: React.FC = () => {
 
                 </IonGrid>
                 <div className="ion-padding-horizontal">
-                    <div className="ion-text-left ion-padding-horizontal">
+                    <div className="ion-text-left">
                         <p className="sm-detail ion-text-wrap  text-white">
                             By clicking Join now, you agree to our <span className="text-blue">
                                 User Agreement Privacy Policy

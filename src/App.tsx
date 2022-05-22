@@ -1,4 +1,4 @@
-import { Route } from "react-router-dom";
+import { Redirect, Route } from "react-router-dom";
 import { IonApp, IonRouterOutlet, setupIonicReact, } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
 import "@ionic/react/css/core.css";
@@ -43,7 +43,9 @@ const App: React.FC = () => {
         <IonApp>
             <IonReactRouter>
                 <IonRouterOutlet>
-                    <Route exact path="/"><Intro /></Route>
+                    <Route exact path="/">
+                        <Redirect to="/tabs" />
+                    </Route>
                     <Route path="/tabs" render={() => <MainTabs />} />
                     <Route path="/choose-language" render={() => <ChooseLanguage />} />
                     <Route path="/scan-qr" render={() => <ScanQRCode />} />
