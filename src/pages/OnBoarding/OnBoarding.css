@@ -21,12 +21,13 @@
     margin-top: 35px;
   }
   .camera-container {
+    overflow: hidden;
       --b:6px;   /* thickness of the border */
       --c:var(--ion-text-color);   /* color of the border */
       --w:50px;  /* width of border */
       --r:50px;  /* radius */
-      --top:40vh;
-      --header:56px;
+      --top:45vh;
+      --header:72px;
       --maxWidth:500px;
       --padding:16px;
 

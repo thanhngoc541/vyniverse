@@ -45,7 +45,7 @@ const App: React.FC = () => {
             <IonReactRouter>
                 <IonRouterOutlet>
                     <Route exact path="/">
-                        <Redirect to="/intro" />
+                        <Redirect to="/scan-qr" />
                     </Route>
                     <Route path="/tabs" render={() => <MainTabs />} />
                     <Route path="/intro" render={() => <Intro />} />

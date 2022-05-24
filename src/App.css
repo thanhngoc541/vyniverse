@@ -32,7 +32,9 @@
     width: calc(100vw - 32px);
     position: absolute;
 }
-
+.ion-no-padding-top{
+  padding-top:0 !important;
+}
 .custom-back
 {
   position: absolute;

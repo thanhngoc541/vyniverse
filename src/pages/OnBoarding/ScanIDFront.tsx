@@ -14,9 +14,11 @@ import '@capacitor-community/camera-preview'
 import QrcodeDecoder from 'qrcode-decoder';
 import { Wave } from "../../components/Wave";
 import { imageOutline } from "ionicons/icons";
+import * as tfTask from '@tensorflow-models/tasks';
 
 const ScanIDFront: React.FC = () => {
-
+    let model;
+    let video;
     const cameraPreviewOptions: CameraPreviewOptions = {
         position: 'front',
         parent: 'camera-id-front',
@@ -24,13 +26,29 @@ const ScanIDFront: React.FC = () => {
     const startCamera = async () => {
         await CameraPreview.start(cameraPreviewOptions);
     }
-
+    const loadModel = async () => {
+        console.log("start load model")
+        model = await tfTask.ObjectDetection.CocoSsd.TFJS.load();
+        console.log("end load model")
+    }
     const stopCamera = async () => {
         await CameraPreview.stop();
     }
-
+    setInterval(async () => {
+        console.log(video)
+        if (!!video) {
+            if (!!model) {
+                const result = await model.predict(video, { numMaxBoxes: 5 });
+                console.log(result.objects);
+            }
+        } else {
+            video = document.getElementById('video')
+        }
+    }, 5000);
     useEffect(() => {
+        console.log("use effect")
         startCamera();
+        loadModel();
         return () => {
             stopCamera();
         }

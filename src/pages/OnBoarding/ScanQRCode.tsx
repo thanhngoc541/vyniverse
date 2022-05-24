@@ -29,13 +29,14 @@ const ScanQRCode: React.FC = () => {
             video = document.getElementById('video')
         }
     }, 5000);
-
+    let sideLength = Math.min(500, window.innerWidth - 42 - 12);
     const cameraPreviewOptions: CameraPreviewOptions = {
         position: 'front',
         parent: 'camera-qr',
-        x: 0,
-        y: 0,
-        height: 200
+        x: 16 + 5 + 6,
+        y: Math.ceil(window.innerHeight * 0.45 - sideLength / 2),
+        height: sideLength,
+        width: sideLength
     };
 
     const startCamera = async () => {
@@ -56,16 +57,12 @@ const ScanQRCode: React.FC = () => {
     }, [])
     return (
         <IonPage>
-            <IonHeader className="ion-no-border">
-                <IonToolbar>
-                    <div className="ion-text-center ion-padding-horizontal">
-                        <p className="title ion-text-wrap">
-                            Scan QR Code
-                        </p>
-                    </div>
-                </IonToolbar>
-            </IonHeader>
-            <IonContent className="ion-padding ion-text-center">
+            <IonContent className="ion-no-padding ion-no-padding-top ion-text-center">
+                <div className="ion-text-center ion-padding-horizontal">
+                    <p className="title ion-text-wrap">
+                        Scan QR Code
+                    </p>
+                </div>
                 <div className="camera-container">
                     <div id="camera-qr" className="camera-content"></div>
                 </div>
