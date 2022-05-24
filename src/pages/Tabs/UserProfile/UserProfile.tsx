@@ -36,7 +36,7 @@ const UserProfile: React.FC = () => {
                 <GameList games={games}></GameList>
                 <div className="ion-padding-horizontal" >
                     Achievements
-                    <IonRouterLink slot="end" className="custom-link float-right" routerLink="/tabs/user-profile/archievements">
+                    <IonRouterLink slot="end" className="custom-link float-right" routerLink="/tabs/user-profile/achievements">
                         See All
                     </IonRouterLink>
                 </div>

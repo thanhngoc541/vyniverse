@@ -49,7 +49,7 @@ const AccountCompletion: React.FC = () => {
                     </IonGrid>
                 </div>
                 <div className="ion-padding-horizontal">
-                    <IonButton className="ion-margin-vertical" routerLink="/account-complete" expand="block" shape="round" >
+                    <IonButton className="ion-margin-vertical" routerLink="/tabs" expand="block" shape="round" >
                         Continue
                     </IonButton>
                 </div>

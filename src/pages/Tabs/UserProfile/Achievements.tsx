@@ -13,7 +13,7 @@ import { useGaming } from "../../../data/data";
 import GameList from "../../../components/GameList";
 
 
-const Gaming: React.FC = () => {
+const Achievements: React.FC = () => {
     const [controlledSwiper, setControlledSwiper] = useState(useSwiper());
     const [activeIndex, setActiveIndex] = useState(0);
     var games = useGaming();
@@ -22,7 +22,7 @@ const Gaming: React.FC = () => {
         <IonPage>
             <IonContent className="" fullscreen>
                 <div className="ion-text-center">
-                    <p className="title">Gaming</p>
+                    <p className="title">Achievements</p>
                 </div>
                 <Swiper
                     modules={[]}
@@ -33,10 +33,13 @@ const Gaming: React.FC = () => {
                     <IonGrid className="swiper-label" slot="container-start">
                         <IonRow>
                             <IonCol onClick={() => controlledSwiper.slideTo(0)} >
-                                <IonLabel color={activeIndex == 0 ? "primary" : ""}>Suggested</IonLabel>
+                                <IonLabel color={activeIndex == 0 ? "primary" : ""}>Summary</IonLabel>
                             </IonCol>
                             <IonCol onClick={() => controlledSwiper.slideTo(1)} >
-                                <IonLabel color={activeIndex == 1 ? "primary" : ""}>All Games</IonLabel>
+                                <IonLabel color={activeIndex == 1 ? "primary" : ""}>Recent</IonLabel>
+                            </IonCol>
+                            <IonCol onClick={() => controlledSwiper.slideTo(2)} >
+                                <IonLabel color={activeIndex == 2 ? "primary" : ""}>Collection</IonLabel>
                             </IonCol>
                         </IonRow>
                     </IonGrid>
@@ -52,4 +55,4 @@ const Gaming: React.FC = () => {
     );
 };
 
-export default Gaming;
+export default Achievements;

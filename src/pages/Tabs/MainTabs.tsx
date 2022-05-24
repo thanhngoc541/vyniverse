@@ -8,6 +8,7 @@ import Login from "../AccountSetup/Login";
 import CreateProfile from '../AccountSetup/CreateProfile';
 import UserProfile from "./UserProfile/UserProfile";
 import Gaming from "./UserProfile/Gaming";
+import Achievements from "./UserProfile/Achievements";
 
 const MainTabs: React.FC = () => {
     return (
@@ -19,6 +20,9 @@ const MainTabs: React.FC = () => {
                 </Route>
                 <Route exact path="/tabs/user-profile/gaming">
                     <Gaming />
+                </Route>
+                <Route exact path="/tabs/user-profile/achievements">
+                    <Achievements />
                 </Route>
                 <Route exact path="/tabs/challenges">
                     <Verification />
