@@ -29,14 +29,14 @@ const ScanQRCode: React.FC = () => {
             video = document.getElementById('video')
         }
     }, 5000);
-    let sideLength = Math.min(500, window.innerWidth - 42 - 12);
+    let sideLength = Math.min(500, window.innerWidth - 42 - 10);
     const cameraPreviewOptions: CameraPreviewOptions = {
         position: 'front',
         parent: 'camera-qr',
-        x: 16 + 5 + 6,
+        x: 16 + 5 + 5,
         y: Math.ceil(window.innerHeight * 0.45 - sideLength / 2),
         height: sideLength,
-        width: sideLength
+        width: sideLength,
     };
 
     const startCamera = async () => {

@@ -19,9 +19,14 @@ import * as tfTask from '@tensorflow-models/tasks';
 const ScanIDFront: React.FC = () => {
     let model;
     let video;
+    let sideLength = Math.min(500, window.innerWidth - 42 - 10);
     const cameraPreviewOptions: CameraPreviewOptions = {
         position: 'front',
         parent: 'camera-id-front',
+        x: 16 + 5 + 5,
+        y: Math.ceil(window.innerHeight * 0.45 - sideLength / 2),
+        height: sideLength,
+        width: sideLength,
     };
     const startCamera = async () => {
         await CameraPreview.start(cameraPreviewOptions);
@@ -55,16 +60,12 @@ const ScanIDFront: React.FC = () => {
     }, [])
     return (
         <IonPage>
-            <IonHeader className="ion-no-border">
-                <IonToolbar>
-                    <div className="ion-text-center ion-padding-horizontal">
-                        <p className="title ion-text-wrap">
-                            Scan ID
-                        </p>
-                    </div>
-                </IonToolbar>
-            </IonHeader>
-            <IonContent className="ion-padding ion-text-center">
+            <IonContent className="ion-no-padding ion-no-padding-top ion-text-center">
+                <div className="ion-text-center ion-padding-horizontal">
+                    <p className="title ion-text-wrap">
+                        Scan ID
+                    </p>
+                </div>
                 <div className="ion-text-center  sub-title">
                     Front Side of the Gorvernment Issued ID
                 </div>

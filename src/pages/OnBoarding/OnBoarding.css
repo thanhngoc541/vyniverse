@@ -16,16 +16,16 @@
     max-width: 500px;
     max-height: 500px;
     object-fit: cover;
-    border-radius: 50px;
+    /* border-radius: 50px; */
     padding: 5px;
     margin-top: 35px;
   }
   .camera-container {
     overflow: hidden;
-      --b:6px;   /* thickness of the border */
+      --b:5px;   /* thickness of the border */
       --c:var(--ion-text-color);   /* color of the border */
       --w:50px;  /* width of border */
-      --r:50px;  /* radius */
+      --r:0;  /* radius */
       --top:45vh;
       --header:72px;
       --maxWidth:500px;

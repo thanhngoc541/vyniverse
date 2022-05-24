@@ -16,10 +16,15 @@ import { Wave } from "../../components/Wave";
 import { imageOutline } from "ionicons/icons";
 
 const ScanIDBack: React.FC = () => {
+    let sideLength = Math.min(500, window.innerWidth - 42 - 10);
 
     const cameraPreviewOptions: CameraPreviewOptions = {
         position: 'front',
         parent: 'camera-id-back',
+        x: 16 + 5 + 5,
+        y: Math.ceil(window.innerHeight * 0.45 - sideLength / 2),
+        height: sideLength,
+        width: sideLength,
     };
     const startCamera = async () => {
         await CameraPreview.start(cameraPreviewOptions);
