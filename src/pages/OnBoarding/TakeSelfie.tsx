@@ -27,7 +27,7 @@ const TakeSelfie: React.FC = () => {
                     </div>
                 </IonToolbar>
             </IonHeader>
-            <IonContent className="ion-padding scan-qr-page">
+            <IonContent className="scan-qr-page">
                 <div className="img-holder ion-text-center animate__animated animate__bounce">
                     <img src="assets/imgs/scanning.png" />
                 </div>

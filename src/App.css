@@ -29,7 +29,7 @@
 .bottom-holder
 {
     bottom: 32px;
-    width: calc(100vw - 32px);
+    width: 100%;
     position: absolute;
 }
 .ion-no-padding-top{

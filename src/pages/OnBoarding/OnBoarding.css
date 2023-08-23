@@ -23,7 +23,7 @@
   .camera-container {
     overflow: hidden;
       --b:5px;   /* thickness of the border */
-      --c:var(--ion-text-color);   /* color of the border */
+      --c:'transparent';   /* color of the border */
       --w:50px;  /* width of border */
       --r:0;  /* radius */
       --top:45vh;

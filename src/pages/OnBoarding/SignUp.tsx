@@ -7,12 +7,14 @@ import CustomField from "../../components/CustomField";
 import { Wave } from "../../components/Wave";
 import { useSignupFields } from "../../data/fields";
 import { validateForm } from "../../data/utils";
+import { useHistory } from "react-router-dom";
 
 
 const SignUp: React.FC = () => {
     const params = useParams();
     const fields = useSignupFields();
     const [errors, setErrors] = useState<any[]>([]);
+    const history = useHistory();
 
     const createAccount = () => {
         const errors = validateForm(fields);

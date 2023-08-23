@@ -1,4 +1,4 @@
-import { IonButton, IonButtons, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonPage, IonRow, IonToolbar } from "@ionic/react";
+import { IonButton, IonButtons, IonCol, IonContent, IonFooter, IonGrid, IonHeader, IonIcon, IonPage, IonRow, IonToolbar, isPlatform } from "@ionic/react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from "swiper";
 import { useState, useEffect } from "react";
@@ -16,13 +16,14 @@ import { Wave } from "../../components/Wave";
 import { imageOutline } from "ionicons/icons";
 
 const ScanIDBack: React.FC = () => {
-    let sideLength = Math.min(500, window.innerWidth - 42 - 10);
 
+    const scale = isPlatform('ios') ? 1.5 : 1
+    let sideLength = Math.min(490, window.innerWidth - 42 - 10);
     const cameraPreviewOptions: CameraPreviewOptions = {
-        position: 'front',
+        position: 'rear',
         parent: 'camera-id-back',
-        x: 16 + 5 + 5,
-        y: Math.ceil(window.innerHeight * 0.45 - sideLength / 2),
+        x: Math.ceil((window.innerWidth - sideLength) * scale / 2),
+        y: Math.ceil((window.innerHeight * 0.45 - sideLength / 2) * scale),
         height: sideLength,
         width: sideLength,
     };
@@ -46,12 +47,12 @@ const ScanIDBack: React.FC = () => {
                 <IonToolbar>
                     <div className="ion-text-center ion-padding-horizontal">
                         <p className="title ion-text-wrap">
-                            Scan ID
+                            Scan ID Back side
                         </p>
                     </div>
                 </IonToolbar>
             </IonHeader>
-            <IonContent className="ion-padding ion-text-center">
+            <IonContent className=" ion-text-center">
                 <div className="ion-text-center  sub-title">
                     Back Side of the Gorvernment Issued ID
                 </div>

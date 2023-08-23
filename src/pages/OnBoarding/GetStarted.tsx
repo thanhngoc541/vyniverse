@@ -21,8 +21,8 @@ const GetStarted: React.FC = () => {
                     </div>
                 </IonToolbar>
             </IonHeader>
-            <IonContent className="ion-padding">
-                <IonGrid className="select-adventure-container ion-align-self-center">
+            <IonContent className="">
+                <IonGrid className=" ion-padding select-adventure-container ion-align-self-center">
                     <IonRow>
                         <IonCol>
                             <IonItem lines="none" color="secondary" className="border-round" shape="round">
